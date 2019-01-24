@@ -1,0 +1,32 @@
+@import '../../vars';
+
+.container {
+  border-radius: $borderRadius;
+  border: 1px solid $borderColor;
+  overflow: hidden;
+
+  table {
+
+    width: 100%;
+
+    thead th {
+      background: $boxColor;
+      color: $blackColor;
+      text-align: left;
+    }
+
+    th, td {
+      border-left: 1px solid $borderColor;
+      padding: 0.5em 0.75em;
+
+      &:first-child {
+        border-left: none;
+      }
+    }
+
+    tbody tr {
+      border-top: 1px solid $borderColor;
+    }
+
+  }
+}

@@ -1,0 +1,70 @@
+
+@import '~meyer-reset-scss/_reset-src.scss';
+@import './vars';
+
+@import './fonts/lato/index';
+
+body {
+  @include page-container;
+}
+
+@media (max-width: 480px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+h1 {
+  font-size: $titleFontSize;
+  font-weight: $titleFontWeight;
+  color: $titleTextColor;
+  line-height: $titleLineHeight;
+  text-align: center;
+}
+
+h2 {
+  font-size: $subtitleFontSize;
+  font-weight: $subtitleFontWeight;
+  color: $subtitleTextColor;
+  line-height: $subtitleLineHeight;
+}
+
+h3 {
+  color: $blackColor;
+  font-weight: $subtitleFontWeight;
+}
+
+a {
+  color: $foregroundColor;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+p {
+  text-align: justify;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  background: none;
+  outline: none;
+}
+
+#react {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  height: 100vh;
+  margin-top: 4em;
+
+  > * + * {
+    margin-top: 2em;
+  }
+}

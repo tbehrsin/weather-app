@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "react",
+  }
+}

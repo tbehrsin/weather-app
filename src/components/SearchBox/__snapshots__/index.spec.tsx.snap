@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox should match snapshot 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "container",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "autofocus": "",
+          "placeholder": "Test",
+          "type": "text",
+          "value": "",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "type": "submit",
+          },
+          "children": Array [
+            Object {
+              "data": "Search",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "text",
+            },
+          ],
+          "name": "button",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "type": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "type": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "autofocus": undefined,
+          "placeholder": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "autofocus": undefined,
+          "placeholder": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "type": "submit",
+        },
+        "children": Array [
+          Object {
+            "data": "Search",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "button",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "autofocus": "",
+            "placeholder": "Test",
+            "type": "text",
+            "value": "",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "autofocus": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "autofocus": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "type": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "type": undefined,
+        },
+      },
+    ],
+    "name": "form",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;
+
+exports[`SearchBox should send request on submit 1`] = `
+Array [
+  Array [
+    "weather-manchester-gb",
+    Object {
+      "query": Object {
+        "APPID": "9715d5915c4a1408053c752f5af7bee6",
+        "q": "manchester,gb",
+        "units": "metric",
+      },
+      "url": "http://api.openweathermap.org/data/2.5/forecast",
+    },
+  ],
+]
+`;

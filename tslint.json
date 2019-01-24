@@ -1,0 +1,15 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    "ter-indent": [true, 2],
+    "no-implicit-dependencies": [true, "dev"],
+    "no-submodule-imports": [true,
+      "redux-persist/lib/storage",
+      "redux-persist/es/integration/react",
+      "redux-saga/effects"
+    ]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+}

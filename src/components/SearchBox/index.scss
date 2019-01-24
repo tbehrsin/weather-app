@@ -1,0 +1,41 @@
+@import '../../vars';
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  width: 100%;
+  padding: 0 4em;
+  box-sizing: border-box;
+
+  input[type=text] {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0.5em 0.75em;
+
+    border: 1px solid $borderColor;
+    border-right: none;
+    border-radius: $borderRadius 0 0 $borderRadius;
+
+    outline: none;
+    font: inherit;
+
+    &:focus {
+      border-color: $foregroundColor;
+
+      + button {
+        background-color: $foregroundColor;
+        border-color: $foregroundColor;
+      }
+    }
+  }
+
+  button {
+    background: $borderColor;
+    border: 1px solid $borderColor;
+    border-left: none;
+    border-radius: 0 $borderRadius $borderRadius 0;
+    color: white;
+    padding: 0.5em 0.75em;
+  }
+}
